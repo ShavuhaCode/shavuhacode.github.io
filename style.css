@@ -239,3 +239,43 @@ a:hover {
     .container::before { left: 22px; }
     .quick-links { grid-template-columns: 1fr; }
 }
+
+.language-switch { text-align: right; margin-bottom: 18px; color: var(--muted); font-size: 14px; }
+.language-switch a { font-weight: 700; }
+
+.link-card small { display:block; margin-top:10px; font-size:13px; }
+
+.language-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    margin-top: 14px;
+    padding: 7px 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+
+    color: inherit;
+    background: rgba(255, 255, 255, 0.06);
+
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.language-button:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-1px);
+}
+
+.language-button:active {
+    transform: translateY(0);
+}
