@@ -154,10 +154,20 @@ a:hover {
 }
 
 .link-card:hover {
-    text-decoration: none;
     transform: translateY(-3px);
     border-color: rgba(23, 105, 224, 0.22);
     box-shadow: 0 14px 30px rgba(29, 43, 76, 0.10);
+}
+
+.link-card-main {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.link-card-main:hover {
+    color: var(--text);
+    text-decoration: none;
 }
 
 .link-card strong {
@@ -250,29 +260,32 @@ a:hover {
     align-items: center;
     justify-content: center;
 
-    width: fit-content;
     margin-top: 14px;
-    padding: 7px 12px;
+    padding: 6px 11px;
 
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(23, 105, 224, 0.18);
     border-radius: 8px;
 
-    color: inherit;
-    background: rgba(255, 255, 255, 0.06);
+    color: var(--primary);
+    background: rgba(23, 105, 224, 0.06);
 
-    font-size: 0.85rem;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
     text-decoration: none;
 
     transition:
-        background 0.2s ease,
-        border-color 0.2s ease,
-        transform 0.2s ease;
+        background .2s ease,
+        border-color .2s ease,
+        color .2s ease,
+        transform .2s ease;
 }
 
 .language-button:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.25);
+    color: var(--primary-dark);
+    background: rgba(23, 105, 224, 0.11);
+    border-color: rgba(23, 105, 224, 0.28);
+    text-decoration: none;
     transform: translateY(-1px);
 }
 
